@@ -134,9 +134,6 @@
       });
 
       function updateESPData(value) {
-        dataDiv.classList.remove("hidden");
-        espData.textContent = `State: ${JSON.stringify(value)}`;
-
         lockedStatus.innerHTML = value.unlocked
           ? "<p class='text-green-700 font-bold'>Unlocked</p>"
           : "<p class='text-red-500 font-bold'>Locked</p>";
